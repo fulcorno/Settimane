@@ -2,7 +2,7 @@
 
 FILENAME = 'comuni_italiani.txt'
 
-infile = open(FILENAME, 'r')
+infile = open(FILENAME, 'r', encoding='utf-8')
 
 # infile.readline()  # leggi e scarta la prima riga
 
