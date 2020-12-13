@@ -1,0 +1,17 @@
+Calcolo MCD
+
+LEGGI a, b
+
+SCOMPONI a in fattori primi
+SCOMPONI b in fattori primi
+
+PRENDI tutti i fattori di a e di b, comuni ad entrambi, presi con l'esponente più basso
+
+
+
+-----------------
+SCOMPONI(x)
+  ...
+  ...
+  ...
+  ...

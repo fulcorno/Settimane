@@ -1,0 +1,32 @@
+Calcolo MCD
+
+LEGGI a, b   8, 12
+
+RIPETI con N che varia tra 1 a MIN(a, b)
+	SE a è divisibile per N e contemporaneamente
+	   b è divisibile per N
+	(è un divisore comune)
+		METTILO DA PARTE N
+
+ESTRAI IL PIÙ GRANDE TRA I NUMERI MESSI DA PARTE
+
+1
+2
+4
+
+Note:
+SE a è divisibile per N
+	si può tradurre come
+SE a/N dà resto 0
+Il calcolo del resto si fa con l'operatore % o con l'operatore mod (a seconda del linguaggio)
+
+
+
+--- oppure definisco una "funzione"
+FUNZIONE MCD( a, b )
+	....
+	
+e poi la uso più volte:
+
+x =MCD(7, 12)
+y = MCD(x, 33)

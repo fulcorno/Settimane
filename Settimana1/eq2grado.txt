@@ -1,0 +1,19 @@
+Equazione di secondo grado
+
+LEGGI a, b, c
+
+SE a=0....
+	CALCOLA x = -c/b
+	SCRIVI x
+	
+SE a<>0... != /= not=
+	CALCOLA Delta = b*b - 4 * a * c
+	
+	SE Delta>0...
+		CALCOLA x1...
+		
+	SE Delta=0...
+		CALCOLA x = -b/(2*a)
+		SCRIVI x
+	SE Delta<0...
+		SCRIVI "non ci sono soluzioni"
