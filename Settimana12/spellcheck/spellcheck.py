@@ -4,6 +4,7 @@
 FILE_PAROLE = 'parole'
 FILE_STORIA = 'story.txt'
 
+
 # dizionario = un insieme contente tutte le parole del dizionario
 #
 # storia = insieme contenente tutte le parole della storia
@@ -26,20 +27,21 @@ def parole_uniche(nome_file):
         parole = line.rstrip().replace('-', ' ').split()
         for parola in parole:
             parola_pulita = pulisci(parola)
-            if parola_pulita!='':
+            if parola_pulita != '':
                 insieme.add(parola_pulita.lower())
 
     file.close()
     return insieme
 
-# rimuove tutti i caretteri INIZIALI e FINALI non alfabetici da una stringa
+
+# rimuove tutti i caratteri INIZIALI e FINALI non alfabetici da una stringa
 def pulisci(parola):
     pulita = parola
 
-    while len(pulita)>0 and not pulita[0].isalpha():
+    while len(pulita) > 0 and not pulita[0].isalpha():
         pulita = pulita[1:]
 
-    while len(pulita)>0 and not pulita[-1].isalpha():
+    while len(pulita) > 0 and not pulita[-1].isalpha():
         pulita = pulita[:-1]
 
     return pulita
@@ -58,5 +60,6 @@ def main():
         print("Le parole sbagliate sono:")
         # print(parole_sbagliate)
         print(sorted(parole_sbagliate))
+
 
 main()
