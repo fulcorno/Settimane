@@ -53,6 +53,8 @@ def main():
 
     storia = parole_uniche(FILE_STORIA)
 
+    print(f'La storia ha un totale di {len(storia)} parole distinte tra loro')
+
     if storia.issubset(dizionario):
         print("La storia non ha errori lessicali")
     else:
